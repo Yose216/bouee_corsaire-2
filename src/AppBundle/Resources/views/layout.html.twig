@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<title>{% block title %}Welcome!{% endblock %}</title>
+	{% block stylesheets %}{% endblock %}
+	<link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+
+
+	<!-- CSS -->
+	<link href="{{ app.request.basepath }}/lib/bootstrap/bootstrap.css" rel="stylesheet">
+	<!--<link href="{{ app.request.basepath }}/css/index.css" rel="stylesheet">-->
+	<link href="{{ app.request.basepath }}/css/style.css" rel="stylesheet">
+	<!-- SCRIPT -->
+	<script src="{{ app.request.basepath }}/lib/jquery/jquery-3.1.1.js"></script>
+	<script src="{{ app.request.basepath }}/lib/bootstrap/bootstrap.js"></script>
+	<script src="{{ app.request.basepath }}/lib/angular/angular.min.js"></script>
+	<script src="{{ app.request.basepath }}/lib/script.js"></script>
+	<script src="{{ app.request.basepath }}/css/font-awesome/css/font-awesome.min.css"></script>
+	<!-- FONT -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+
+</head>
+
+
+<body>
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+
+				<div class="login-wrap">
+					<div class="login-html">
+						<input id="tab-1" type="radio" name="tab" class="sign-in" checked>
+						<label for="tab-1" class="tab">Sign In</label>
+						<input id="tab-2" type="radio" name="tab" class="sign-up">
+						<label for="tab-2" class="tab">Sign Up</label>
+						
+						<div class="login-form">
+							<div class="sign-in-htm" >
+								{{ render(controller("FOSUserBundle:Security:login")) }}
+							</div>
+
+							<div class="sign-up-htm">
+								{{ render(controller("FOSUserBundle:Registration:register")) }}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="{{ path('homepage') }}">Bouée Corsaire</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					{% if app.user and is_granted('ROLE_ADMIN') %}
+    					<li><a href="{{ path('admin') }}">Administration</a></li>
+					{% endif %}
+					{% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+					<li><a href="{{ path('service_index') }}">Services</a></li>
+					<li><a href="{{ path('besoin_index') }}">Besoins</a></li>
+					<li><a href="{{ path('fos_user_profile_show') }}">Mon profil</a></li>
+					<li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        	<span class="glyphicon glyphicon-user"></span> Bienvenue, {{ app.user.username }} <b class="caret"></b>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="{{ path('fos_user_security_logout') }}">Deconnexion</a></li>
+						</ul>
+                    </li>
+					{% else %}
+					<li>
+						<button type="button" class="login" data-toggle="modal" data-target="#myModal">Inscription & connexion</button>
+					</li>
+					{% endif %}
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	
+	{% block body %}{% endblock %} {% block javascripts %}{% endblock %}
+	
+	<footer>
+		<i class="fa fa-facebook-square fa-3x" aria-hidden="true" ></i>
+		<i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
+		<i class="fa fa-google-plus-square fa-3x" aria-hidden="true"></i>
+	</footer>
+
+
+
+</body>
+
+</html>

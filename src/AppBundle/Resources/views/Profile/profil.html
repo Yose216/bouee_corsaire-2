@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Profil</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="css/script.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+<h4>Hello, {{prénom}}</h4>
+<h5>Quisque ut varius diam. Proin eget nulla et ipsum condimentum sodales.</h5>
+<div class="trait"></div>
+	
+<div class="wrapper">
+    <a href="#one" class="btn active">Mes informations</a>
+	<a href="#two" class="btn">Messages</a>
+    <a href="#three" class="btn">Mes services et besoins</a>
+
+      
+      <hr/>
+  
+  <div class="slides">
+      <div class="sld" id="#one">
+      <div class="container">
+  <h2>Détails du compte</h2>
+  <form>
+    <div class="form-group">
+      <label for="nom">Nom:</label>
+     
+    </div>
+	     <div class="form-group">
+      <label for="prenom">Prénom:</label>
+    
+    </div>
+	     <div class="form-group">
+      <label for="pseudo">Pseudo:</label>
+
+    </div>
+    <div class="form-group">
+      <label for="pwd">Mot de passe:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter votre mot de passe">
+    </div>
+	     <div class="form-group">
+      <label for="repeatpwd">Répeter mot de passe:</label>
+      <input type="password" class="form-control" id="repeatpwd" placeholder="Enter a nouveau votre mot de passe">
+    </div>
+	     <div class="form-group">
+      <label for="codepostal">Code postal:</label>
+      <input type="codepostal" class="form-control" id="codepostal" placeholder="Enter votre code postal">
+    </div>
+	     <div class="form-group">
+      <label for="tel">Téléphone:</label>
+      <input type="telephone" class="form-control" id="tel" placeholder="Enter votre numéro de téléphone">
+    </div>
+      
+	     <div class="form-group">
+      <label for="status">Status téléphone:</label>
+                  <select class="col-md-12 tel">
+                    <option>Public</option>
+                    <option>Pour vos contact</option>
+                    <option>Pour les utilisteurs</option>
+                    <option>Privé</option>
+                  </select>
+    </div>
+    <button type="submit" class="btn btn-default btnsub">Submit</button>
+  </form>
+	  </div>
+	    </div>
+
+      <div class="sld" id="#two">
+		 <h2>Votre messagerie</h2>	 
+      </div>
+      <div class="sld" id="#three">
+      	<div class="">
+      	<h2>Formulaire de confirmation de service rendu</h2>
+       <form class="search">
+      <div class="form-mail ">
+        <input type="search" class="input-lg-mail" placeholder="E-mail du contact à qui vous avez rendu service ">
+      </div>
+       <div class="form-temps">
+        <input type="search" class="input-sm" placeholder="Temps en heure">
+      </div>
+    </form>
+       
+      <button type="submit" class="btnte btn-primary">Envoyer</button>
+
+    </div>
+      <h2>Votre quota de services et besoins</h2>
+		  	<div class="progress">
+  <div class="progress-bar progress-bar-success" style="width: 25%">
+    <span class="sr-only">25% Complete (success)</span>
+  </div>
+  <div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 57%">
+    <span class="sr-only">57% Complete (warning)</span>
+  </div>
+		  </div>
+   <div class="blocs">
+		<div class="row">
+			<div class="col-sm-6">
+				<div><h2>vos services</h2></div>
+				<div class="serv">
+				<div class="temps">h</div>
+					<div class="infoser">Service<br>catégorie</div>
+				</div>	
+			</div>
+			<div class="col-sm-6">
+				<div><h2>vos Besoins</h2></div>
+				<div class="besoin">
+				<div class="temps">h</div>
+					<div class="infobes">Besoin<br>catégorie</div>
+				</div>	
+			</div>
+			</div>
+	
+	</div>
+      </div>
+</div>
+		</div>
+
+	<script>
+		$('.btn').click(function () {
+	$('.active').removeClass('active');
+    $(this).addClass("active");
+});
+	</script>
+
+</body>
+
+</html>
