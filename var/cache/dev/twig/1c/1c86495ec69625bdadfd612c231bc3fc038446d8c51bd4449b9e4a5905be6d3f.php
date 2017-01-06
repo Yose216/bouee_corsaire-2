@@ -21,20 +21,20 @@ class __TwigTemplate_316f93963a21681d01fe6a0e15d071e567e48f59c0c742c6da56a90c7b2
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_dfa13d1055e25921b41dfe32dc70ede11fd1a113b5cf3beb86e3f40841544007 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_dfa13d1055e25921b41dfe32dc70ede11fd1a113b5cf3beb86e3f40841544007->enter($__internal_dfa13d1055e25921b41dfe32dc70ede11fd1a113b5cf3beb86e3f40841544007_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":besoin:show.html.twig"));
+        $__internal_8de831788ad900f679dea205a3973328785a13a5a48eb4722bdbe629d585c867 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_8de831788ad900f679dea205a3973328785a13a5a48eb4722bdbe629d585c867->enter($__internal_8de831788ad900f679dea205a3973328785a13a5a48eb4722bdbe629d585c867_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":besoin:show.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_dfa13d1055e25921b41dfe32dc70ede11fd1a113b5cf3beb86e3f40841544007->leave($__internal_dfa13d1055e25921b41dfe32dc70ede11fd1a113b5cf3beb86e3f40841544007_prof);
+        $__internal_8de831788ad900f679dea205a3973328785a13a5a48eb4722bdbe629d585c867->leave($__internal_8de831788ad900f679dea205a3973328785a13a5a48eb4722bdbe629d585c867_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_14e4c0567b1708839a2dfcfcb95f42ac1bca039a53544215d44237643e0ab786 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_14e4c0567b1708839a2dfcfcb95f42ac1bca039a53544215d44237643e0ab786->enter($__internal_14e4c0567b1708839a2dfcfcb95f42ac1bca039a53544215d44237643e0ab786_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_638c4e30048ce75aae47ca33eedf6b17d42805098e2ee250bd1ece7d7c229d9e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_638c4e30048ce75aae47ca33eedf6b17d42805098e2ee250bd1ece7d7c229d9e->enter($__internal_638c4e30048ce75aae47ca33eedf6b17d42805098e2ee250bd1ece7d7c229d9e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "    <h1>Besoin</h1>
@@ -84,31 +84,11 @@ class __TwigTemplate_316f93963a21681d01fe6a0e15d071e567e48f59c0c742c6da56a90c7b2
 \t\t\t\t</td>
 \t\t\t\t
             </tr>
-            <tr>
-                <th>Prenom</th>
-                <td>";
-        // line 35
-        echo twig_escape_filter($this->env, $this->getAttribute(($context["besoin"] ?? $this->getContext($context, "besoin")), "prenom", array()), "html", null, true);
-        echo "</td>
-            </tr>
-            <tr>
-                <th>Adresse</th>
-                <td>";
-        // line 39
-        echo twig_escape_filter($this->env, $this->getAttribute(($context["besoin"] ?? $this->getContext($context, "besoin")), "adresse", array()), "html", null, true);
-        echo "</td>
-            </tr>
-            <tr>
-                <th>Codepostale</th>
-                <td>";
-        // line 43
-        echo twig_escape_filter($this->env, $this->getAttribute(($context["besoin"] ?? $this->getContext($context, "besoin")), "codePostale", array()), "html", null, true);
-        echo "</td>
-            </tr>
+         
             <tr>
                 <th>Description</th>
                 <td>";
-        // line 47
+        // line 36
         echo twig_escape_filter($this->env, $this->getAttribute(($context["besoin"] ?? $this->getContext($context, "besoin")), "description", array()), "html", null, true);
         echo "</td>
             </tr>
@@ -119,24 +99,24 @@ class __TwigTemplate_316f93963a21681d01fe6a0e15d071e567e48f59c0c742c6da56a90c7b2
     <ul>
         <li>
             <a href=\"";
-        // line 55
+        // line 44
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("besoin_index");
         echo "\">Back to the list</a>
         </li>
         <li>
             <a href=\"";
-        // line 58
+        // line 47
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("besoin_edit", array("id" => $this->getAttribute(($context["besoin"] ?? $this->getContext($context, "besoin")), "id", array()))), "html", null, true);
         echo "\">Edit</a>
         </li>
         <li>
             ";
-        // line 61
+        // line 50
         echo         $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderer->renderBlock(($context["delete_form"] ?? $this->getContext($context, "delete_form")), 'form_start');
         echo "
                 <input type=\"submit\" value=\"Delete\">
             ";
-        // line 63
+        // line 52
         echo         $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderer->renderBlock(($context["delete_form"] ?? $this->getContext($context, "delete_form")), 'form_end');
         echo "
         </li>
@@ -144,7 +124,7 @@ class __TwigTemplate_316f93963a21681d01fe6a0e15d071e567e48f59c0c742c6da56a90c7b2
 -->
 ";
         
-        $__internal_14e4c0567b1708839a2dfcfcb95f42ac1bca039a53544215d44237643e0ab786->leave($__internal_14e4c0567b1708839a2dfcfcb95f42ac1bca039a53544215d44237643e0ab786_prof);
+        $__internal_638c4e30048ce75aae47ca33eedf6b17d42805098e2ee250bd1ece7d7c229d9e->leave($__internal_638c4e30048ce75aae47ca33eedf6b17d42805098e2ee250bd1ece7d7c229d9e_prof);
 
     }
 
@@ -160,7 +140,7 @@ class __TwigTemplate_316f93963a21681d01fe6a0e15d071e567e48f59c0c742c6da56a90c7b2
 
     public function getDebugInfo()
     {
-        return array (  140 => 63,  135 => 61,  129 => 58,  123 => 55,  112 => 47,  105 => 43,  98 => 39,  91 => 35,  82 => 29,  75 => 25,  68 => 21,  61 => 17,  54 => 13,  47 => 9,  40 => 4,  34 => 3,  11 => 1,);
+        return array (  120 => 52,  115 => 50,  109 => 47,  103 => 44,  92 => 36,  82 => 29,  75 => 25,  68 => 21,  61 => 17,  54 => 13,  47 => 9,  40 => 4,  34 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -205,18 +185,7 @@ class __TwigTemplate_316f93963a21681d01fe6a0e15d071e567e48f59c0c742c6da56a90c7b2
 \t\t\t\t</td>
 \t\t\t\t
             </tr>
-            <tr>
-                <th>Prenom</th>
-                <td>{{ besoin.prenom }}</td>
-            </tr>
-            <tr>
-                <th>Adresse</th>
-                <td>{{ besoin.adresse }}</td>
-            </tr>
-            <tr>
-                <th>Codepostale</th>
-                <td>{{ besoin.codePostale }}</td>
-            </tr>
+         
             <tr>
                 <th>Description</th>
                 <td>{{ besoin.description }}</td>

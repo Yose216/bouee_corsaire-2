@@ -21,19 +21,19 @@ class __TwigTemplate_0ef5b3e1ef1a74a0a80a3223ff9c3830ffa44ec11c569ad9c9123bf5a4a
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_735cc97d915c2980477745007edb7cb59fffbb1a2b7575c9d7984f6ed3049c97 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_735cc97d915c2980477745007edb7cb59fffbb1a2b7575c9d7984f6ed3049c97->enter($__internal_735cc97d915c2980477745007edb7cb59fffbb1a2b7575c9d7984f6ed3049c97_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/index.html.twig"));
+        $__internal_1f6c1e6415a71a22dfe08e67db05ccd0a9bbb178cebc8f0bcdb438186fd544d2 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_1f6c1e6415a71a22dfe08e67db05ccd0a9bbb178cebc8f0bcdb438186fd544d2->enter($__internal_1f6c1e6415a71a22dfe08e67db05ccd0a9bbb178cebc8f0bcdb438186fd544d2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_735cc97d915c2980477745007edb7cb59fffbb1a2b7575c9d7984f6ed3049c97->leave($__internal_735cc97d915c2980477745007edb7cb59fffbb1a2b7575c9d7984f6ed3049c97_prof);
+        $__internal_1f6c1e6415a71a22dfe08e67db05ccd0a9bbb178cebc8f0bcdb438186fd544d2->leave($__internal_1f6c1e6415a71a22dfe08e67db05ccd0a9bbb178cebc8f0bcdb438186fd544d2_prof);
 
     }
 
     public function block_body($context, array $blocks = array())
     {
-        $__internal_6acc3e9c160d0354def16785c9429957895bb4bfe18b340dd32037afdcf350ba = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_6acc3e9c160d0354def16785c9429957895bb4bfe18b340dd32037afdcf350ba->enter($__internal_6acc3e9c160d0354def16785c9429957895bb4bfe18b340dd32037afdcf350ba_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_de39a64a66f99ff90486eef5db24801936f1ee8a850c6aa2cd2e9d2608146136 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_de39a64a66f99ff90486eef5db24801936f1ee8a850c6aa2cd2e9d2608146136->enter($__internal_de39a64a66f99ff90486eef5db24801936f1ee8a850c6aa2cd2e9d2608146136_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 2
         echo "<div id=\"myCarousel\" class=\"carousel slide\" data-ride=\"carousel\">
@@ -83,7 +83,7 @@ class __TwigTemplate_0ef5b3e1ef1a74a0a80a3223ff9c3830ffa44ec11c569ad9c9123bf5a4a
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()), "basepath", array()), "html", null, true);
         echo "/images/help.svg\" alt=\"\">
 \t\t\t\t\t<h3>Besoins</h3>
-\t\t\t\t\t<p>Toujours de la bonne personne</p>
+\t\t\t\t\t<p>Toujours besoin de la bonne personne</p>
 \t\t\t\t</div>
 \t\t\t</div>
 \t\t</div>
@@ -108,7 +108,7 @@ class __TwigTemplate_0ef5b3e1ef1a74a0a80a3223ff9c3830ffa44ec11c569ad9c9123bf5a4a
 \t\t\t\t<img class=\"imgpres\" src=\"";
         // line 53
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "request", array()), "basepath", array()), "html", null, true);
-        echo "/images/boueecorsaire.jpg\">
+        echo "/images/logo_boue_corsaire.jpg\">
                 <div class=\"text-presentation\">
                     <p class=\"presentation\">Troc & Co</p>
                     <div class=\"traitsimple\"></div>
@@ -169,7 +169,7 @@ class __TwigTemplate_0ef5b3e1ef1a74a0a80a3223ff9c3830ffa44ec11c569ad9c9123bf5a4a
             echo "</p>
 \t\t\t\t</div>
 \t\t\t\t<div class=\"categorie\">
-\t\t\t\t<div class=\"icone\"><img src=\"\"></div>
+\t\t\t\t<div class=\"heure\"><img src=\"\"></div>
 \t\t\t\t\t<p class=\"identite\">
 \t\t\t\t\t\t";
             // line 94
@@ -179,7 +179,7 @@ class __TwigTemplate_0ef5b3e1ef1a74a0a80a3223ff9c3830ffa44ec11c569ad9c9123bf5a4a
             echo "
   \t\t\t\t\t<br>";
             // line 95
-            echo twig_escape_filter($this->env, $this->getAttribute($context["besoin"], "codePostale", array()), "html", null, true);
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["besoin"], "user", array()), "codepostal", array()), "html", null, true);
             echo "<br>";
             echo twig_escape_filter($this->env, $this->getAttribute($context["besoin"], "description", array()), "html", null, true);
             echo "</p>
@@ -194,11 +194,12 @@ class __TwigTemplate_0ef5b3e1ef1a74a0a80a3223ff9c3830ffa44ec11c569ad9c9123bf5a4a
         echo "
 \t\t</div>
 \t</div>
+</div>
 \t<br>
 
 ";
         
-        $__internal_6acc3e9c160d0354def16785c9429957895bb4bfe18b340dd32037afdcf350ba->leave($__internal_6acc3e9c160d0354def16785c9429957895bb4bfe18b340dd32037afdcf350ba_prof);
+        $__internal_de39a64a66f99ff90486eef5db24801936f1ee8a850c6aa2cd2e9d2608146136->leave($__internal_de39a64a66f99ff90486eef5db24801936f1ee8a850c6aa2cd2e9d2608146136_prof);
 
     }
 
@@ -257,7 +258,7 @@ class __TwigTemplate_0ef5b3e1ef1a74a0a80a3223ff9c3830ffa44ec11c569ad9c9123bf5a4a
 \t\t\t\t<div class=\"carousel-caption\">
 \t\t\t\t    <img src=\"{{ app.request.basepath }}/images/help.svg\" alt=\"\">
 \t\t\t\t\t<h3>Besoins</h3>
-\t\t\t\t\t<p>Toujours de la bonne personne</p>
+\t\t\t\t\t<p>Toujours besoin de la bonne personne</p>
 \t\t\t\t</div>
 \t\t\t</div>
 \t\t</div>
@@ -279,7 +280,7 @@ class __TwigTemplate_0ef5b3e1ef1a74a0a80a3223ff9c3830ffa44ec11c569ad9c9123bf5a4a
 
 \t\t\t<!--<div class=\"col-sm-12\">-->
 \t\t\t\t<div class=\"well\">
-\t\t\t\t<img class=\"imgpres\" src=\"{{ app.request.basepath }}/images/boueecorsaire.jpg\">
+\t\t\t\t<img class=\"imgpres\" src=\"{{ app.request.basepath }}/images/logo_boue_corsaire.jpg\">
                 <div class=\"text-presentation\">
                     <p class=\"presentation\">Troc & Co</p>
                     <div class=\"traitsimple\"></div>
@@ -318,16 +319,17 @@ class __TwigTemplate_0ef5b3e1ef1a74a0a80a3223ff9c3830ffa44ec11c569ad9c9123bf5a4a
 \t\t\t\t\t<p class=\"info\">{{ besoin.title }}<br>{{ besoin.categorie }}</p>
 \t\t\t\t</div>
 \t\t\t\t<div class=\"categorie\">
-\t\t\t\t<div class=\"icone\"><img src=\"\"></div>
+\t\t\t\t<div class=\"heure\"><img src=\"\"></div>
 \t\t\t\t\t<p class=\"identite\">
 \t\t\t\t\t\t{{ besoin.user.prenom}} {{ besoin.user.nom }}
-  \t\t\t\t\t<br>{{ besoin.codePostale }}<br>{{ besoin.description }}</p>
+  \t\t\t\t\t<br>{{ besoin.user.codepostal }}<br>{{ besoin.description }}</p>
 \t\t\t\t</div>
 \t\t\t</div>
 \t\t\t{% endfor %}
 
 \t\t</div>
 \t</div>
+</div>
 \t<br>
 
 {% endblock %}

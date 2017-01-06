@@ -19,8 +19,8 @@ class __TwigTemplate_0bfa6fd8fbbadf23ee8d7bd7a377b649dda39fd715d40f0bbe3705ac7b6
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_a788e77f0989245dec496ef570f83ca9d7407f10e5c9329652e642b5b6ea8791 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_a788e77f0989245dec496ef570f83ca9d7407f10e5c9329652e642b5b6ea8791->enter($__internal_a788e77f0989245dec496ef570f83ca9d7407f10e5c9329652e642b5b6ea8791_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AppBundle::layout.html.twig"));
+        $__internal_ae727c9ea867d3cec0cff573bbc5090925b0e230f85d297506d7b7d5a8bf95ee = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_ae727c9ea867d3cec0cff573bbc5090925b0e230f85d297506d7b7d5a8bf95ee->enter($__internal_ae727c9ea867d3cec0cff573bbc5090925b0e230f85d297506d7b7d5a8bf95ee_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AppBundle::layout.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -192,63 +192,81 @@ class __TwigTemplate_0bfa6fd8fbbadf23ee8d7bd7a377b649dda39fd715d40f0bbe3705ac7b6
         $this->displayBlock('javascripts', $context, $blocks);
         // line 96
         echo "\t
-\t<footer>
-\t\t<i class=\"fa fa-facebook-square fa-3x\" aria-hidden=\"true\" ></i>
-\t\t<i class=\"fa fa-twitter-square fa-3x\" aria-hidden=\"true\"></i>
-\t\t<i class=\"fa fa-google-plus-square fa-3x\" aria-hidden=\"true\"></i>
+\t<footer class=\"col-lg-12\">
+\t\t<div class=\"plan col-lg-3 col-lg-offset-1\">
+\t\t\t<h3>Plan du site</h3>
+\t\t\t<a>Acceuil</a>
+\t\t\t<a>Service</a>
+\t\t\t<a>Besoin</a>
+\t\t\t<a>Mon profil</a>
+\t\t</div>
+\t\t
+\t\t<div class=\"Social col-lg-3 col-lg-offset-1\">
+\t\t\t<h3>Nous suivre</h3>
+\t\t\t<a>facebook</a>\t\t\t
+\t\t\t<a>Twitter</a>
+\t\t\t<a>Google+</a>
+\t\t</div>
+\t\t
+\t\t<div class=\"Contact col-lg-3 col-lg-offset-1\">
+\t\t\t<h3>Contact</h3>
+\t\t\t<a>Adresse@boueecorsaire.com</a>
+\t\t\t<a>3 rue de l'adresse</a>
+\t\t\t<a>35000 rennes</a>
+\t\t\t<a>Telephone : 0299203010</a>
+\t\t</div>
+\t\t<div class=\"Mention col-lg-offset-4 col-lg-8\">
+\t\t\t<p>Copyright © 2017 <a>Mentions légales</a> / La bouée corsaire </p>
+\t\t</div>
 \t</footer>
-
-
-
-</body>
-
+\t</body>
 </html>";
         
-        $__internal_a788e77f0989245dec496ef570f83ca9d7407f10e5c9329652e642b5b6ea8791->leave($__internal_a788e77f0989245dec496ef570f83ca9d7407f10e5c9329652e642b5b6ea8791_prof);
+        $__internal_ae727c9ea867d3cec0cff573bbc5090925b0e230f85d297506d7b7d5a8bf95ee->leave($__internal_ae727c9ea867d3cec0cff573bbc5090925b0e230f85d297506d7b7d5a8bf95ee_prof);
 
     }
 
     // line 6
     public function block_title($context, array $blocks = array())
     {
-        $__internal_34b1371d93a3b263a611f387fec6214579ac4bbcd3ccc09d41dc9117edf8bdb4 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_34b1371d93a3b263a611f387fec6214579ac4bbcd3ccc09d41dc9117edf8bdb4->enter($__internal_34b1371d93a3b263a611f387fec6214579ac4bbcd3ccc09d41dc9117edf8bdb4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_958eaceb79db636bac72258746401a3a600a94dc9434db469c60c01fecb03182 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_958eaceb79db636bac72258746401a3a600a94dc9434db469c60c01fecb03182->enter($__internal_958eaceb79db636bac72258746401a3a600a94dc9434db469c60c01fecb03182_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "Welcome!";
         
-        $__internal_34b1371d93a3b263a611f387fec6214579ac4bbcd3ccc09d41dc9117edf8bdb4->leave($__internal_34b1371d93a3b263a611f387fec6214579ac4bbcd3ccc09d41dc9117edf8bdb4_prof);
+        $__internal_958eaceb79db636bac72258746401a3a600a94dc9434db469c60c01fecb03182->leave($__internal_958eaceb79db636bac72258746401a3a600a94dc9434db469c60c01fecb03182_prof);
 
     }
 
     // line 7
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_345aaab1685d63343da73f38f2de3bd555313d3148c33287f6a62af4208f90cc = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_345aaab1685d63343da73f38f2de3bd555313d3148c33287f6a62af4208f90cc->enter($__internal_345aaab1685d63343da73f38f2de3bd555313d3148c33287f6a62af4208f90cc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_a8a79fa8a61babf85728de9d807b6ff3c200806e10c8a7df38803e6c09fe6d25 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_a8a79fa8a61babf85728de9d807b6ff3c200806e10c8a7df38803e6c09fe6d25->enter($__internal_a8a79fa8a61babf85728de9d807b6ff3c200806e10c8a7df38803e6c09fe6d25_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
         
-        $__internal_345aaab1685d63343da73f38f2de3bd555313d3148c33287f6a62af4208f90cc->leave($__internal_345aaab1685d63343da73f38f2de3bd555313d3148c33287f6a62af4208f90cc_prof);
+        $__internal_a8a79fa8a61babf85728de9d807b6ff3c200806e10c8a7df38803e6c09fe6d25->leave($__internal_a8a79fa8a61babf85728de9d807b6ff3c200806e10c8a7df38803e6c09fe6d25_prof);
 
     }
 
     // line 95
     public function block_body($context, array $blocks = array())
     {
-        $__internal_f4508e0b1aa875f3350924d8ee14d680dbff50bafce3fd619a58b5061ca853d3 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_f4508e0b1aa875f3350924d8ee14d680dbff50bafce3fd619a58b5061ca853d3->enter($__internal_f4508e0b1aa875f3350924d8ee14d680dbff50bafce3fd619a58b5061ca853d3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_edfd153620b5a6e6bd124f433e3debdb16ed7621798136d4cd0878ea426fac10 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_edfd153620b5a6e6bd124f433e3debdb16ed7621798136d4cd0878ea426fac10->enter($__internal_edfd153620b5a6e6bd124f433e3debdb16ed7621798136d4cd0878ea426fac10_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         
-        $__internal_f4508e0b1aa875f3350924d8ee14d680dbff50bafce3fd619a58b5061ca853d3->leave($__internal_f4508e0b1aa875f3350924d8ee14d680dbff50bafce3fd619a58b5061ca853d3_prof);
+        $__internal_edfd153620b5a6e6bd124f433e3debdb16ed7621798136d4cd0878ea426fac10->leave($__internal_edfd153620b5a6e6bd124f433e3debdb16ed7621798136d4cd0878ea426fac10_prof);
 
     }
 
     public function block_javascripts($context, array $blocks = array())
     {
-        $__internal_c57131238f00b8de5a542471486dcd3fd19b36e0d5e6141e4f631c0d4433f3a0 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_c57131238f00b8de5a542471486dcd3fd19b36e0d5e6141e4f631c0d4433f3a0->enter($__internal_c57131238f00b8de5a542471486dcd3fd19b36e0d5e6141e4f631c0d4433f3a0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_3f1948707b43a954c7838ffd68850426580404c11fdca8220db920b0164c83e9 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_3f1948707b43a954c7838ffd68850426580404c11fdca8220db920b0164c83e9->enter($__internal_3f1948707b43a954c7838ffd68850426580404c11fdca8220db920b0164c83e9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
         
-        $__internal_c57131238f00b8de5a542471486dcd3fd19b36e0d5e6141e4f631c0d4433f3a0->leave($__internal_c57131238f00b8de5a542471486dcd3fd19b36e0d5e6141e4f631c0d4433f3a0_prof);
+        $__internal_3f1948707b43a954c7838ffd68850426580404c11fdca8220db920b0164c83e9->leave($__internal_3f1948707b43a954c7838ffd68850426580404c11fdca8220db920b0164c83e9_prof);
 
     }
 
@@ -264,7 +282,7 @@ class __TwigTemplate_0bfa6fd8fbbadf23ee8d7bd7a377b649dda39fd715d40f0bbe3705ac7b6
 
     public function getDebugInfo()
     {
-        return array (  235 => 95,  224 => 7,  212 => 6,  194 => 96,  190 => 95,  182 => 89,  176 => 85,  169 => 81,  163 => 78,  157 => 75,  153 => 74,  148 => 73,  145 => 72,  139 => 70,  137 => 69,  130 => 65,  110 => 48,  103 => 44,  76 => 20,  72 => 19,  68 => 18,  64 => 17,  60 => 16,  55 => 14,  51 => 13,  47 => 12,  39 => 8,  37 => 7,  33 => 6,  26 => 1,);
+        return array (  253 => 95,  242 => 7,  230 => 6,  194 => 96,  190 => 95,  182 => 89,  176 => 85,  169 => 81,  163 => 78,  157 => 75,  153 => 74,  148 => 73,  145 => 72,  139 => 70,  137 => 69,  130 => 65,  110 => 48,  103 => 44,  76 => 20,  72 => 19,  68 => 18,  64 => 17,  60 => 16,  55 => 14,  51 => 13,  47 => 12,  39 => 8,  37 => 7,  33 => 6,  26 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -373,16 +391,34 @@ class __TwigTemplate_0bfa6fd8fbbadf23ee8d7bd7a377b649dda39fd715d40f0bbe3705ac7b6
 \t
 \t{% block body %}{% endblock %} {% block javascripts %}{% endblock %}
 \t
-\t<footer>
-\t\t<i class=\"fa fa-facebook-square fa-3x\" aria-hidden=\"true\" ></i>
-\t\t<i class=\"fa fa-twitter-square fa-3x\" aria-hidden=\"true\"></i>
-\t\t<i class=\"fa fa-google-plus-square fa-3x\" aria-hidden=\"true\"></i>
+\t<footer class=\"col-lg-12\">
+\t\t<div class=\"plan col-lg-3 col-lg-offset-1\">
+\t\t\t<h3>Plan du site</h3>
+\t\t\t<a>Acceuil</a>
+\t\t\t<a>Service</a>
+\t\t\t<a>Besoin</a>
+\t\t\t<a>Mon profil</a>
+\t\t</div>
+\t\t
+\t\t<div class=\"Social col-lg-3 col-lg-offset-1\">
+\t\t\t<h3>Nous suivre</h3>
+\t\t\t<a>facebook</a>\t\t\t
+\t\t\t<a>Twitter</a>
+\t\t\t<a>Google+</a>
+\t\t</div>
+\t\t
+\t\t<div class=\"Contact col-lg-3 col-lg-offset-1\">
+\t\t\t<h3>Contact</h3>
+\t\t\t<a>Adresse@boueecorsaire.com</a>
+\t\t\t<a>3 rue de l'adresse</a>
+\t\t\t<a>35000 rennes</a>
+\t\t\t<a>Telephone : 0299203010</a>
+\t\t</div>
+\t\t<div class=\"Mention col-lg-offset-4 col-lg-8\">
+\t\t\t<p>Copyright © 2017 <a>Mentions légales</a> / La bouée corsaire </p>
+\t\t</div>
 \t</footer>
-
-
-
-</body>
-
+\t</body>
 </html>", "AppBundle::layout.html.twig", "/home/pcapprenant17/Documents/Bou-e_corsaire_projet/src/AppBundle/Resources/views/layout.html.twig");
     }
 }

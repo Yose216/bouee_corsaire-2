@@ -15,14 +15,14 @@ class __TwigTemplate_49f0e2b35aa9bb69d26a34473a6ef9a041a3a6dd9672e769a4a295cadd9
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_01500a40ffc50be0f58bb475adf1009401be2429376c98a719f015e473bcd9fe = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_01500a40ffc50be0f58bb475adf1009401be2429376c98a719f015e473bcd9fe->enter($__internal_01500a40ffc50be0f58bb475adf1009401be2429376c98a719f015e473bcd9fe_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Framework/Form/percent_widget.html.php"));
+        $__internal_6c9e557b29baa2b9d9786e8d102c1d241b313bf800305279fea6bf9f669465d2 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_6c9e557b29baa2b9d9786e8d102c1d241b313bf800305279fea6bf9f669465d2->enter($__internal_6c9e557b29baa2b9d9786e8d102c1d241b313bf800305279fea6bf9f669465d2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Framework/Form/percent_widget.html.php"));
 
         // line 1
         echo "<?php echo \$view['form']->block(\$form, 'form_widget_simple', array('type' => isset(\$type) ? \$type : 'text')) ?> %
 ";
         
-        $__internal_01500a40ffc50be0f58bb475adf1009401be2429376c98a719f015e473bcd9fe->leave($__internal_01500a40ffc50be0f58bb475adf1009401be2429376c98a719f015e473bcd9fe_prof);
+        $__internal_6c9e557b29baa2b9d9786e8d102c1d241b313bf800305279fea6bf9f669465d2->leave($__internal_6c9e557b29baa2b9d9786e8d102c1d241b313bf800305279fea6bf9f669465d2_prof);
 
     }
 

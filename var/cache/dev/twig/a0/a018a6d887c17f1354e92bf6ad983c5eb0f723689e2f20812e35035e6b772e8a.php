@@ -21,20 +21,20 @@ class __TwigTemplate_c5cd62358e69f8d57707476a9322cc7ab1472fa5f8e35ec5b0b69cc1be0
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_e44ab110295f95726a315dfb6b750132a9a0a3a8e3657ed5d71d9f166d952141 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_e44ab110295f95726a315dfb6b750132a9a0a3a8e3657ed5d71d9f166d952141->enter($__internal_e44ab110295f95726a315dfb6b750132a9a0a3a8e3657ed5d71d9f166d952141_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AppBundle:Profile:show.html.twig"));
+        $__internal_70b89ac91715816484ca664c41100f1eb6fe0b57d42a270a152bd362cabf2589 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_70b89ac91715816484ca664c41100f1eb6fe0b57d42a270a152bd362cabf2589->enter($__internal_70b89ac91715816484ca664c41100f1eb6fe0b57d42a270a152bd362cabf2589_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AppBundle:Profile:show.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_e44ab110295f95726a315dfb6b750132a9a0a3a8e3657ed5d71d9f166d952141->leave($__internal_e44ab110295f95726a315dfb6b750132a9a0a3a8e3657ed5d71d9f166d952141_prof);
+        $__internal_70b89ac91715816484ca664c41100f1eb6fe0b57d42a270a152bd362cabf2589->leave($__internal_70b89ac91715816484ca664c41100f1eb6fe0b57d42a270a152bd362cabf2589_prof);
 
     }
 
     // line 2
     public function block_body($context, array $blocks = array())
     {
-        $__internal_383d81c886f5fbcf32acb0b24da91ce5ed7175a90ceb33bef5a8eec20dc684bc = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_383d81c886f5fbcf32acb0b24da91ce5ed7175a90ceb33bef5a8eec20dc684bc->enter($__internal_383d81c886f5fbcf32acb0b24da91ce5ed7175a90ceb33bef5a8eec20dc684bc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_909a01a6e64906593c6df1e2ff50397c9376718538cd9bf3b38b29645cb396d2 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_909a01a6e64906593c6df1e2ff50397c9376718538cd9bf3b38b29645cb396d2->enter($__internal_909a01a6e64906593c6df1e2ff50397c9376718538cd9bf3b38b29645cb396d2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 3
         echo "
@@ -59,7 +59,7 @@ class __TwigTemplate_c5cd62358e69f8d57707476a9322cc7ab1472fa5f8e35ec5b0b69cc1be0
       <div class=\"sld\" id=\"#one\">
       <div class=\"container\">
   <h2>Détails du compte</h2>
-  <form>
+\t\t  <div class=\"col-md-6 fr\">
     <div class=\"form-group\">
       <label for=\"nom\">Nom: ";
         // line 24
@@ -70,45 +70,71 @@ class __TwigTemplate_c5cd62358e69f8d57707476a9322cc7ab1472fa5f8e35ec5b0b69cc1be0
 \t     <div class=\"form-group\">
       <label for=\"prenom\">Prénom: ";
         // line 28
+        echo twig_escape_filter($this->env, $this->getAttribute(($context["user"] ?? $this->getContext($context, "user")), "prenom", array()), "html", null, true);
+        echo "</label>
+    
+    </div>
+\t<div class=\"form-group\">
+      <label for=\"prenom\">Nom d'utilisateur: ";
+        // line 32
         echo twig_escape_filter($this->env, $this->getAttribute(($context["user"] ?? $this->getContext($context, "user")), "username", array()), "html", null, true);
         echo "</label>
     
     </div>
 \t     <div class=\"form-group\">
       <label for=\"pseudo\">Email: ";
-        // line 32
+        // line 36
         echo twig_escape_filter($this->env, $this->getAttribute(($context["user"] ?? $this->getContext($context, "user")), "email", array()), "html", null, true);
         echo "</label>
 
     </div>
-    <div class=\"form-group\">
-      <label for=\"pwd\">Mot de passe:</label>
-      <input type=\"password\" class=\"form-control\" id=\"pwd\" placeholder=\"Enter votre mot de passe\">
+\t\t\t  </div>
+\t\t  <div class=\"col-md-6 fr\">
+\t<div>
+\t\t<div class=\"form-group\">
+    \t\t<label for=\"tel\">Adresse: ";
+        // line 43
+        echo twig_escape_filter($this->env, $this->getAttribute(($context["user"] ?? $this->getContext($context, "user")), "addresse", array()), "html", null, true);
+        echo "</label>
+\t\t</div>
     </div>
-\t     <div class=\"form-group\">
-      <label for=\"repeatpwd\">Répeter mot de passe:</label>
-      <input type=\"password\" class=\"form-control\" id=\"repeatpwd\" placeholder=\"Enter a nouveau votre mot de passe\">
+\t<div>
+\t\t<div class=\"form-group\">
+    \t\t<label for=\"tel\">Ville: ";
+        // line 48
+        echo twig_escape_filter($this->env, $this->getAttribute(($context["user"] ?? $this->getContext($context, "user")), "ville", array()), "html", null, true);
+        echo "</label>
+\t\t</div>
     </div>
-\t     <div class=\"form-group\">
-      <label for=\"codepostal\">Code postal:</label>
-      <input type=\"codepostal\" class=\"form-control\" id=\"codepostal\" placeholder=\"Enter votre code postal\">
+\t<div>
+\t\t<div class=\"form-group\">
+    \t\t<label for=\"tel\">Region: ";
+        // line 53
+        echo twig_escape_filter($this->env, $this->getAttribute(($context["user"] ?? $this->getContext($context, "user")), "region", array()), "html", null, true);
+        echo "</label>
+\t\t</div>
     </div>
-\t     <div class=\"form-group\">
-      <label for=\"tel\">Téléphone:</label>
-      <input type=\"telephone\" class=\"form-control\" id=\"tel\" placeholder=\"Enter votre numéro de téléphone\">
+\t<div >
+\t\t<div class=\"form-group\">
+    \t\t<label for=\"codepostal\">Code postal: ";
+        // line 58
+        echo twig_escape_filter($this->env, $this->getAttribute(($context["user"] ?? $this->getContext($context, "user")), "codePostal", array()), "html", null, true);
+        echo "</label>
+\t\t</div>
     </div>
-      
-\t     <div class=\"form-group\">
-      <label for=\"status\">Status téléphone:</label>
-                  <select class=\"col-md-12 tel\">
-                    <option>Public</option>
-                    <option>Pour vos contact</option>
-                    <option>Pour les utilisteurs</option>
-                    <option>Privé</option>
-                  </select>
+\t<div>
+\t\t<div class=\"form-group\">
+    \t\t<label for=\"tel\">Téléphone: ";
+        // line 63
+        echo twig_escape_filter($this->env, $this->getAttribute(($context["user"] ?? $this->getContext($context, "user")), "telephone", array()), "html", null, true);
+        echo "</label>
+\t\t</div>
     </div>
-    <button type=\"submit\" class=\"btn btn-default btnsub\">Submit</button>
-  </form>
+\t\t\t  </div>
+  \t<a type=\"button\" class=\"btn btn-primary btnInfo col-lg-offset-2\" href=\"";
+        // line 67
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("fos_user_profile_edit");
+        echo "\">Edition de mes informations</a>
 \t  </div>
 \t    </div>
 
@@ -116,7 +142,7 @@ class __TwigTemplate_c5cd62358e69f8d57707476a9322cc7ab1472fa5f8e35ec5b0b69cc1be0
 \t\t <h2>Votre messagerie</h2>\t 
       </div>
       <div class=\"sld\" id=\"#three\">
-      \t<div class=\"\">
+      \t<div class=\"formulaire\">
       \t<h2>Formulaire de confirmation de service rendu</h2>
        <form class=\"search\">
       <div class=\"form-mail \">
@@ -142,20 +168,20 @@ class __TwigTemplate_c5cd62358e69f8d57707476a9322cc7ab1472fa5f8e35ec5b0b69cc1be0
    <div class=\"blocs\">
 \t\t<div class=\"row\">
 \t\t\t<div class=\"col-sm-6\">
-\t\t\t\t<div><h2>vos services</h2></div>
+\t\t\t\t<div><h2 class=\"ser\">Vos services</h2></div>
 \t\t\t\t";
-        // line 97
+        // line 102
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable($this->getAttribute(($context["user"] ?? $this->getContext($context, "user")), "services", array()));
         foreach ($context['_seq'] as $context["_key"] => $context["service"]) {
-            // line 98
+            // line 103
             echo "\t\t\t\t<div class=\"serv\">
 \t\t\t\t<div class=\"temps\"> ";
-            // line 99
+            // line 104
             echo twig_escape_filter($this->env, $this->getAttribute($context["service"], "heure", array()), "html", null, true);
             echo "h</div>
 \t\t\t\t\t<div class=\"infoser\">";
-            // line 100
+            // line 105
             echo twig_escape_filter($this->env, $this->getAttribute($context["service"], "title", array()), "html", null, true);
             echo " <br> ";
             echo twig_escape_filter($this->env, $this->getAttribute($context["service"], "categorie", array()), "html", null, true);
@@ -166,37 +192,48 @@ class __TwigTemplate_c5cd62358e69f8d57707476a9322cc7ab1472fa5f8e35ec5b0b69cc1be0
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['service'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 103
-        echo "\t\t\t</div>
+        // line 108
+        echo "\t\t\t\t<div>
+\t\t\t\t\t<a type=\"button\" class=\"btn-lg btn-primary\" href=\"";
+        // line 109
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("service_new");
+        echo "\">Ajouter un service</a>
+\t\t\t\t</div>
+\t\t\t</div>
   \t\t\t\t\t
 \t\t\t<div class=\"col-sm-6\">
-\t\t\t\t<div><h2>vos Besoins</h2></div>
+\t\t\t\t<div><h2 class=\"bes\">Vos besoins</h2></div>
 \t\t\t\t";
-        // line 107
+        // line 115
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable($this->getAttribute(($context["user"] ?? $this->getContext($context, "user")), "besoins", array()));
         foreach ($context['_seq'] as $context["_key"] => $context["besoin"]) {
             echo " 
 \t\t\t\t<div class=\"besoin\">
-\t\t\t\t<div class=\"temps\"> ";
-            // line 109
+\t\t\t\t\t<div class=\"temps\"> ";
+            // line 117
             echo twig_escape_filter($this->env, $this->getAttribute($context["besoin"], "heure", array()), "html", null, true);
             echo "h</div>
 \t\t\t\t\t<div class=\"infobes\"> ";
-            // line 110
+            // line 118
             echo twig_escape_filter($this->env, $this->getAttribute($context["besoin"], "title", array()), "html", null, true);
             echo " <br> ";
             echo twig_escape_filter($this->env, $this->getAttribute($context["besoin"], "categorie", array()), "html", null, true);
             echo " </div>
-\t\t\t\t\t
-\t\t\t\t</div>\t
+\t\t\t\t</div>
 \t\t\t\t";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['besoin'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 114
-        echo "\t\t\t</div>
+        // line 121
+        echo "\t\t\t\t<div class=\"\">
+\t\t\t\t\t<a type=\"button\" class=\"btn-lg btn-primary \" href=\"";
+        // line 122
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("besoin_new");
+        echo "\">Ajouter un besoin</a>
+\t\t\t\t</div>\t
+\t\t\t</div>
 \t\t\t</div>
 \t
 \t</div>
@@ -213,7 +250,7 @@ class __TwigTemplate_c5cd62358e69f8d57707476a9322cc7ab1472fa5f8e35ec5b0b69cc1be0
 
 ";
         
-        $__internal_383d81c886f5fbcf32acb0b24da91ce5ed7175a90ceb33bef5a8eec20dc684bc->leave($__internal_383d81c886f5fbcf32acb0b24da91ce5ed7175a90ceb33bef5a8eec20dc684bc_prof);
+        $__internal_909a01a6e64906593c6df1e2ff50397c9376718538cd9bf3b38b29645cb396d2->leave($__internal_909a01a6e64906593c6df1e2ff50397c9376718538cd9bf3b38b29645cb396d2_prof);
 
     }
 
@@ -229,7 +266,7 @@ class __TwigTemplate_c5cd62358e69f8d57707476a9322cc7ab1472fa5f8e35ec5b0b69cc1be0
 
     public function getDebugInfo()
     {
-        return array (  199 => 114,  187 => 110,  183 => 109,  176 => 107,  170 => 103,  159 => 100,  155 => 99,  152 => 98,  148 => 97,  80 => 32,  73 => 28,  66 => 24,  44 => 5,  40 => 3,  34 => 2,  11 => 1,);
+        return array (  233 => 122,  230 => 121,  219 => 118,  215 => 117,  208 => 115,  199 => 109,  196 => 108,  185 => 105,  181 => 104,  178 => 103,  174 => 102,  136 => 67,  129 => 63,  121 => 58,  113 => 53,  105 => 48,  97 => 43,  87 => 36,  80 => 32,  73 => 28,  66 => 24,  44 => 5,  40 => 3,  34 => 2,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -263,47 +300,52 @@ class __TwigTemplate_c5cd62358e69f8d57707476a9322cc7ab1472fa5f8e35ec5b0b69cc1be0
       <div class=\"sld\" id=\"#one\">
       <div class=\"container\">
   <h2>Détails du compte</h2>
-  <form>
+\t\t  <div class=\"col-md-6 fr\">
     <div class=\"form-group\">
       <label for=\"nom\">Nom: {{ user.nom }}</label>
      
     </div>
 \t     <div class=\"form-group\">
-      <label for=\"prenom\">Prénom: {{ user.username }}</label>
+      <label for=\"prenom\">Prénom: {{ user.prenom }}</label>
+    
+    </div>
+\t<div class=\"form-group\">
+      <label for=\"prenom\">Nom d'utilisateur: {{ user.username }}</label>
     
     </div>
 \t     <div class=\"form-group\">
       <label for=\"pseudo\">Email: {{ user.email }}</label>
 
     </div>
-    <div class=\"form-group\">
-      <label for=\"pwd\">Mot de passe:</label>
-      <input type=\"password\" class=\"form-control\" id=\"pwd\" placeholder=\"Enter votre mot de passe\">
+\t\t\t  </div>
+\t\t  <div class=\"col-md-6 fr\">
+\t<div>
+\t\t<div class=\"form-group\">
+    \t\t<label for=\"tel\">Adresse: {{ user.addresse }}</label>
+\t\t</div>
     </div>
-\t     <div class=\"form-group\">
-      <label for=\"repeatpwd\">Répeter mot de passe:</label>
-      <input type=\"password\" class=\"form-control\" id=\"repeatpwd\" placeholder=\"Enter a nouveau votre mot de passe\">
+\t<div>
+\t\t<div class=\"form-group\">
+    \t\t<label for=\"tel\">Ville: {{ user.ville }}</label>
+\t\t</div>
     </div>
-\t     <div class=\"form-group\">
-      <label for=\"codepostal\">Code postal:</label>
-      <input type=\"codepostal\" class=\"form-control\" id=\"codepostal\" placeholder=\"Enter votre code postal\">
+\t<div>
+\t\t<div class=\"form-group\">
+    \t\t<label for=\"tel\">Region: {{ user.region }}</label>
+\t\t</div>
     </div>
-\t     <div class=\"form-group\">
-      <label for=\"tel\">Téléphone:</label>
-      <input type=\"telephone\" class=\"form-control\" id=\"tel\" placeholder=\"Enter votre numéro de téléphone\">
+\t<div >
+\t\t<div class=\"form-group\">
+    \t\t<label for=\"codepostal\">Code postal: {{ user.codePostal }}</label>
+\t\t</div>
     </div>
-      
-\t     <div class=\"form-group\">
-      <label for=\"status\">Status téléphone:</label>
-                  <select class=\"col-md-12 tel\">
-                    <option>Public</option>
-                    <option>Pour vos contact</option>
-                    <option>Pour les utilisteurs</option>
-                    <option>Privé</option>
-                  </select>
+\t<div>
+\t\t<div class=\"form-group\">
+    \t\t<label for=\"tel\">Téléphone: {{ user.telephone }}</label>
+\t\t</div>
     </div>
-    <button type=\"submit\" class=\"btn btn-default btnsub\">Submit</button>
-  </form>
+\t\t\t  </div>
+  \t<a type=\"button\" class=\"btn btn-primary btnInfo col-lg-offset-2\" href=\"{{ path('fos_user_profile_edit') }}\">Edition de mes informations</a>
 \t  </div>
 \t    </div>
 
@@ -311,7 +353,7 @@ class __TwigTemplate_c5cd62358e69f8d57707476a9322cc7ab1472fa5f8e35ec5b0b69cc1be0
 \t\t <h2>Votre messagerie</h2>\t 
       </div>
       <div class=\"sld\" id=\"#three\">
-      \t<div class=\"\">
+      \t<div class=\"formulaire\">
       \t<h2>Formulaire de confirmation de service rendu</h2>
        <form class=\"search\">
       <div class=\"form-mail \">
@@ -337,24 +379,29 @@ class __TwigTemplate_c5cd62358e69f8d57707476a9322cc7ab1472fa5f8e35ec5b0b69cc1be0
    <div class=\"blocs\">
 \t\t<div class=\"row\">
 \t\t\t<div class=\"col-sm-6\">
-\t\t\t\t<div><h2>vos services</h2></div>
+\t\t\t\t<div><h2 class=\"ser\">Vos services</h2></div>
 \t\t\t\t{% for service in user.services %}
 \t\t\t\t<div class=\"serv\">
 \t\t\t\t<div class=\"temps\"> {{service.heure}}h</div>
 \t\t\t\t\t<div class=\"infoser\">{{service.title}} <br> {{service.categorie}}</div>
 \t\t\t\t</div>
 \t\t\t\t{% endfor %}
+\t\t\t\t<div>
+\t\t\t\t\t<a type=\"button\" class=\"btn-lg btn-primary\" href=\"{{ path('service_new') }}\">Ajouter un service</a>
+\t\t\t\t</div>
 \t\t\t</div>
   \t\t\t\t\t
 \t\t\t<div class=\"col-sm-6\">
-\t\t\t\t<div><h2>vos Besoins</h2></div>
+\t\t\t\t<div><h2 class=\"bes\">Vos besoins</h2></div>
 \t\t\t\t{% for besoin in user.besoins %} 
 \t\t\t\t<div class=\"besoin\">
-\t\t\t\t<div class=\"temps\"> {{besoin.heure}}h</div>
+\t\t\t\t\t<div class=\"temps\"> {{besoin.heure}}h</div>
 \t\t\t\t\t<div class=\"infobes\"> {{besoin.title}} <br> {{besoin.categorie}} </div>
-\t\t\t\t\t
-\t\t\t\t</div>\t
+\t\t\t\t</div>
 \t\t\t\t{% endfor %}
+\t\t\t\t<div class=\"\">
+\t\t\t\t\t<a type=\"button\" class=\"btn-lg btn-primary \" href=\"{{ path('besoin_new') }}\">Ajouter un besoin</a>
+\t\t\t\t</div>\t
 \t\t\t</div>
 \t\t\t</div>
 \t

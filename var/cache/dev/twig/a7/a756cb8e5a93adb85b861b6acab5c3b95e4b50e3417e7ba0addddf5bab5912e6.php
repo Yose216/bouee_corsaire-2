@@ -21,20 +21,20 @@ class __TwigTemplate_39682bff46b983400b3b96a85aa84cd1d446fc58140936485366d7208e2
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_a34846ab1e489d3bc204206c651d625dbf4889c0e69570db56a2bdbbf1b153d9 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_a34846ab1e489d3bc204206c651d625dbf4889c0e69570db56a2bdbbf1b153d9->enter($__internal_a34846ab1e489d3bc204206c651d625dbf4889c0e69570db56a2bdbbf1b153d9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":service:show.html.twig"));
+        $__internal_f5af6f2e575959620ffe5329573903ac9c53a5e6431c1bd2c82f15233b9ace75 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_f5af6f2e575959620ffe5329573903ac9c53a5e6431c1bd2c82f15233b9ace75->enter($__internal_f5af6f2e575959620ffe5329573903ac9c53a5e6431c1bd2c82f15233b9ace75_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":service:show.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_a34846ab1e489d3bc204206c651d625dbf4889c0e69570db56a2bdbbf1b153d9->leave($__internal_a34846ab1e489d3bc204206c651d625dbf4889c0e69570db56a2bdbbf1b153d9_prof);
+        $__internal_f5af6f2e575959620ffe5329573903ac9c53a5e6431c1bd2c82f15233b9ace75->leave($__internal_f5af6f2e575959620ffe5329573903ac9c53a5e6431c1bd2c82f15233b9ace75_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_6064a6b874542c8eef795074e66d9b129871e44ef45f499f00327ca9679f340d = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_6064a6b874542c8eef795074e66d9b129871e44ef45f499f00327ca9679f340d->enter($__internal_6064a6b874542c8eef795074e66d9b129871e44ef45f499f00327ca9679f340d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_bb888d44abf1ee3d3dde48bf5a96b568d857f9e6c1d7fd3bb50f07382548a3d8 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_bb888d44abf1ee3d3dde48bf5a96b568d857f9e6c1d7fd3bb50f07382548a3d8->enter($__internal_bb888d44abf1ee3d3dde48bf5a96b568d857f9e6c1d7fd3bb50f07382548a3d8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "    <h1>Service</h1>
@@ -84,23 +84,9 @@ class __TwigTemplate_39682bff46b983400b3b96a85aa84cd1d446fc58140936485366d7208e2
         echo "</td>
             </tr>
             <tr>
-                <th>Adresse</th>
-                <td>";
-        // line 34
-        echo twig_escape_filter($this->env, $this->getAttribute(($context["service"] ?? $this->getContext($context, "service")), "adresse", array()), "html", null, true);
-        echo "</td>
-            </tr>
-            <tr>
-                <th>Codepostal</th>
-                <td>";
-        // line 38
-        echo twig_escape_filter($this->env, $this->getAttribute(($context["service"] ?? $this->getContext($context, "service")), "codePostal", array()), "html", null, true);
-        echo "</td>
-            </tr>
-            <tr>
                 <th>Description</th>
                 <td>";
-        // line 42
+        // line 34
         echo twig_escape_filter($this->env, $this->getAttribute(($context["service"] ?? $this->getContext($context, "service")), "description", array()), "html", null, true);
         echo "</td>
             </tr>
@@ -110,31 +96,21 @@ class __TwigTemplate_39682bff46b983400b3b96a85aa84cd1d446fc58140936485366d7208e2
     <ul>
         <li>
             <a href=\"";
-        // line 49
+        // line 41
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("service_index");
         echo "\">Back to the list</a>
         </li>
         <li>
             <a href=\"";
-        // line 52
+        // line 44
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("service_edit", array("id" => $this->getAttribute(($context["service"] ?? $this->getContext($context, "service")), "id", array()))), "html", null, true);
         echo "\">Edit</a>
         </li>
-        <li>
-            ";
-        // line 55
-        echo         $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderer->renderBlock(($context["delete_form"] ?? $this->getContext($context, "delete_form")), 'form_start');
-        echo "
-                <input type=\"submit\" value=\"Delete\">
-            ";
-        // line 57
-        echo         $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderer->renderBlock(($context["delete_form"] ?? $this->getContext($context, "delete_form")), 'form_end');
-        echo "
-        </li>
+     
     </ul>
 ";
         
-        $__internal_6064a6b874542c8eef795074e66d9b129871e44ef45f499f00327ca9679f340d->leave($__internal_6064a6b874542c8eef795074e66d9b129871e44ef45f499f00327ca9679f340d_prof);
+        $__internal_bb888d44abf1ee3d3dde48bf5a96b568d857f9e6c1d7fd3bb50f07382548a3d8->leave($__internal_bb888d44abf1ee3d3dde48bf5a96b568d857f9e6c1d7fd3bb50f07382548a3d8_prof);
 
     }
 
@@ -150,7 +126,7 @@ class __TwigTemplate_39682bff46b983400b3b96a85aa84cd1d446fc58140936485366d7208e2
 
     public function getDebugInfo()
     {
-        return array (  131 => 57,  126 => 55,  120 => 52,  114 => 49,  104 => 42,  97 => 38,  90 => 34,  83 => 30,  76 => 26,  69 => 22,  62 => 18,  55 => 14,  48 => 10,  40 => 4,  34 => 3,  11 => 1,);
+        return array (  106 => 44,  100 => 41,  90 => 34,  83 => 30,  76 => 26,  69 => 22,  62 => 18,  55 => 14,  48 => 10,  40 => 4,  34 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -195,14 +171,6 @@ class __TwigTemplate_39682bff46b983400b3b96a85aa84cd1d446fc58140936485366d7208e2
                 <td>{{ service.user }}</td>
             </tr>
             <tr>
-                <th>Adresse</th>
-                <td>{{ service.adresse }}</td>
-            </tr>
-            <tr>
-                <th>Codepostal</th>
-                <td>{{ service.codePostal }}</td>
-            </tr>
-            <tr>
                 <th>Description</th>
                 <td>{{ service.description }}</td>
             </tr>
@@ -216,11 +184,7 @@ class __TwigTemplate_39682bff46b983400b3b96a85aa84cd1d446fc58140936485366d7208e2
         <li>
             <a href=\"{{ path('service_edit', { 'id': service.id }) }}\">Edit</a>
         </li>
-        <li>
-            {{ form_start(delete_form) }}
-                <input type=\"submit\" value=\"Delete\">
-            {{ form_end(delete_form) }}
-        </li>
+     
     </ul>
 {% endblock %}
 ", ":service:show.html.twig", "/home/pcapprenant17/Documents/Bou-e_corsaire_projet/app/Resources/views/service/show.html.twig");

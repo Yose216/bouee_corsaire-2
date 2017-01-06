@@ -19,8 +19,8 @@ class __TwigTemplate_114b7be79fb6677af02f9aa7ae2c7e79d5b7cccd01f3bbb5e76ca6ebfea
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_c8dbadbc6ca5c6a1453a0220d51058fb71937f3c6b1f96f8999505f639020cdb = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_c8dbadbc6ca5c6a1453a0220d51058fb71937f3c6b1f96f8999505f639020cdb->enter($__internal_c8dbadbc6ca5c6a1453a0220d51058fb71937f3c6b1f96f8999505f639020cdb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AppBundle::layout.html.twig"));
+        $__internal_571c2342cd29eafada0dd4192918df839b5a9ffb8df81cdead038dac308955c0 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_571c2342cd29eafada0dd4192918df839b5a9ffb8df81cdead038dac308955c0->enter($__internal_571c2342cd29eafada0dd4192918df839b5a9ffb8df81cdead038dac308955c0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AppBundle::layout.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -125,60 +125,62 @@ class __TwigTemplate_114b7be79fb6677af02f9aa7ae2c7e79d5b7cccd01f3bbb5e76ca6ebfea
 \t\t\t\t\t<span class=\"icon-bar\"></span>
 \t\t\t\t\t<span class=\"icon-bar\"></span>
 \t\t\t\t</button>
-\t\t\t\t<a class=\"navbar-brand\" href=\"";
-        // line 65
-        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("homepage");
-        echo "\">Bouée Corsaire</a>
 \t\t\t</div>
 \t\t\t<div class=\"collapse navbar-collapse\" id=\"myNavbar\">
+\t\t\t\t<div class=\"navbar-header\">
+      \t\t\t\t<a class=\"navbar-brand\" href=\"";
+        // line 68
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("homepage");
+        echo "\">Bouée Corsaire</a>
+    \t\t\t</div>
 \t\t\t\t<ul class=\"nav navbar-nav\">
 \t\t\t\t\t";
-        // line 69
+        // line 71
         if (($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "user", array()) && $this->env->getExtension('Symfony\Bridge\Twig\Extension\SecurityExtension')->isGranted("ROLE_ADMIN"))) {
-            // line 70
+            // line 72
             echo "    \t\t\t\t\t<li><a href=\"";
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("admin");
             echo "\">Administration</a></li>
 \t\t\t\t\t";
         }
-        // line 72
+        // line 74
         echo "\t\t\t\t\t";
         if ($this->env->getExtension('Symfony\Bridge\Twig\Extension\SecurityExtension')->isGranted("IS_AUTHENTICATED_REMEMBERED")) {
-            // line 73
+            // line 75
             echo "\t\t\t\t\t<li><a href=\"";
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("service_index");
             echo "\">Services</a></li>
 \t\t\t\t\t<li><a href=\"";
-            // line 74
+            // line 76
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("besoin_index");
             echo "\">Besoins</a></li>
 \t\t\t\t\t<li><a href=\"";
-            // line 75
+            // line 77
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("fos_user_profile_show");
             echo "\">Mon profil</a></li>
 \t\t\t\t\t<li class=\"dropdown\">
                         <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">
                         \t<span class=\"glyphicon glyphicon-user\"></span> Bienvenue, ";
-            // line 78
+            // line 80
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "user", array()), "username", array()), "html", null, true);
             echo " <b class=\"caret\"></b>
 \t\t\t\t\t\t</a>
 \t\t\t\t\t\t<ul class=\"dropdown-menu\">
 \t\t\t\t\t\t\t<li><a href=\"";
-            // line 81
+            // line 83
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("fos_user_security_logout");
             echo "\">Deconnexion</a></li>
 \t\t\t\t\t\t</ul>
                     </li>
 \t\t\t\t\t";
         } else {
-            // line 85
+            // line 87
             echo "\t\t\t\t\t<li>
 \t\t\t\t\t\t<button type=\"button\" class=\"login\" data-toggle=\"modal\" data-target=\"#myModal\">Inscription & connexion</button>
 \t\t\t\t\t</li>
 \t\t\t\t\t";
         }
-        // line 89
+        // line 91
         echo "\t\t\t\t</ul>
 \t\t\t</div>
 \t\t</div>
@@ -186,69 +188,87 @@ class __TwigTemplate_114b7be79fb6677af02f9aa7ae2c7e79d5b7cccd01f3bbb5e76ca6ebfea
 
 \t
 \t";
-        // line 95
+        // line 97
         $this->displayBlock('body', $context, $blocks);
         echo " ";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 96
+        // line 98
         echo "\t
-\t<footer>
-\t\t<i class=\"fa fa-facebook-square fa-3x\" aria-hidden=\"true\" ></i>
-\t\t<i class=\"fa fa-twitter-square fa-3x\" aria-hidden=\"true\"></i>
-\t\t<i class=\"fa fa-google-plus-square fa-3x\" aria-hidden=\"true\"></i>
+\t<footer class=\"col-lg-12\">
+\t\t<div class=\"plan col-lg-3 col-lg-offset-1\">
+\t\t\t<h3>Plan du site</h3>
+\t\t\t<a>Acceuil</a>
+\t\t\t<a>Service</a>
+\t\t\t<a>Besoin</a>
+\t\t\t<a>Mon profil</a>
+\t\t</div>
+\t\t
+\t\t<div class=\"Social col-lg-3 col-lg-offset-1\">
+\t\t\t<h3>Nous suivre</h3>
+\t\t\t<a>facebook</a>\t\t\t
+\t\t\t<a>Twitter</a>
+\t\t\t<a>Google+</a>
+\t\t</div>
+\t\t
+\t\t<div class=\"Contact col-lg-3 col-lg-offset-1\">
+\t\t\t<h3>Contact</h3>
+\t\t\t<a>Adresse@boueecorsaire.com</a>
+\t\t\t<a>3 rue de l'adresse</a>
+\t\t\t<a>35000 rennes</a>
+\t\t\t<a>Telephone : 0299203010</a>
+\t\t</div>
+\t\t<div class=\"Mention col-lg-offset-4 col-lg-8\">
+\t\t\t<p>Copyright © 2017 <a>Mentions légales</a> / La bouée corsaire </p>
+\t\t</div>
 \t</footer>
-
-
-
-</body>
-
+\t</body>
 </html>";
         
-        $__internal_c8dbadbc6ca5c6a1453a0220d51058fb71937f3c6b1f96f8999505f639020cdb->leave($__internal_c8dbadbc6ca5c6a1453a0220d51058fb71937f3c6b1f96f8999505f639020cdb_prof);
+        $__internal_571c2342cd29eafada0dd4192918df839b5a9ffb8df81cdead038dac308955c0->leave($__internal_571c2342cd29eafada0dd4192918df839b5a9ffb8df81cdead038dac308955c0_prof);
 
     }
 
     // line 6
     public function block_title($context, array $blocks = array())
     {
-        $__internal_f2d4d79c6a3dd00b44c1613267b85b32fa8be178dc0ffc37335907ca8e78e055 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_f2d4d79c6a3dd00b44c1613267b85b32fa8be178dc0ffc37335907ca8e78e055->enter($__internal_f2d4d79c6a3dd00b44c1613267b85b32fa8be178dc0ffc37335907ca8e78e055_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_9e6d77a8f9e13756b780d1d9eef7e0f11479f67513ec7ed8aeca3d4ae84c2bf0 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_9e6d77a8f9e13756b780d1d9eef7e0f11479f67513ec7ed8aeca3d4ae84c2bf0->enter($__internal_9e6d77a8f9e13756b780d1d9eef7e0f11479f67513ec7ed8aeca3d4ae84c2bf0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "Welcome!";
         
-        $__internal_f2d4d79c6a3dd00b44c1613267b85b32fa8be178dc0ffc37335907ca8e78e055->leave($__internal_f2d4d79c6a3dd00b44c1613267b85b32fa8be178dc0ffc37335907ca8e78e055_prof);
+        $__internal_9e6d77a8f9e13756b780d1d9eef7e0f11479f67513ec7ed8aeca3d4ae84c2bf0->leave($__internal_9e6d77a8f9e13756b780d1d9eef7e0f11479f67513ec7ed8aeca3d4ae84c2bf0_prof);
 
     }
 
     // line 7
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_9d22526f9df9900bc6378605fa47638b19200d615d0be269b9e84df9edd34ab9 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_9d22526f9df9900bc6378605fa47638b19200d615d0be269b9e84df9edd34ab9->enter($__internal_9d22526f9df9900bc6378605fa47638b19200d615d0be269b9e84df9edd34ab9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_177e879544fd24fec19999f62a57156bd378bb97adf48cb0181b59d46dddd0fd = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_177e879544fd24fec19999f62a57156bd378bb97adf48cb0181b59d46dddd0fd->enter($__internal_177e879544fd24fec19999f62a57156bd378bb97adf48cb0181b59d46dddd0fd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
         
-        $__internal_9d22526f9df9900bc6378605fa47638b19200d615d0be269b9e84df9edd34ab9->leave($__internal_9d22526f9df9900bc6378605fa47638b19200d615d0be269b9e84df9edd34ab9_prof);
+        $__internal_177e879544fd24fec19999f62a57156bd378bb97adf48cb0181b59d46dddd0fd->leave($__internal_177e879544fd24fec19999f62a57156bd378bb97adf48cb0181b59d46dddd0fd_prof);
 
     }
 
-    // line 95
+    // line 97
     public function block_body($context, array $blocks = array())
     {
-        $__internal_eb38d3aa78207a993cc841445133a1d32ee9779ca29191e27a038b64b979f071 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_eb38d3aa78207a993cc841445133a1d32ee9779ca29191e27a038b64b979f071->enter($__internal_eb38d3aa78207a993cc841445133a1d32ee9779ca29191e27a038b64b979f071_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_f6e138ae3419a846aec2e63b5dee62bb7393ce9df517b25feff93690f96bb371 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_f6e138ae3419a846aec2e63b5dee62bb7393ce9df517b25feff93690f96bb371->enter($__internal_f6e138ae3419a846aec2e63b5dee62bb7393ce9df517b25feff93690f96bb371_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         
-        $__internal_eb38d3aa78207a993cc841445133a1d32ee9779ca29191e27a038b64b979f071->leave($__internal_eb38d3aa78207a993cc841445133a1d32ee9779ca29191e27a038b64b979f071_prof);
+        $__internal_f6e138ae3419a846aec2e63b5dee62bb7393ce9df517b25feff93690f96bb371->leave($__internal_f6e138ae3419a846aec2e63b5dee62bb7393ce9df517b25feff93690f96bb371_prof);
 
     }
 
     public function block_javascripts($context, array $blocks = array())
     {
-        $__internal_fa0eae771cec48fe67f5dddf8a02fd8a4e0a66a06595b052860df1818027eda8 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_fa0eae771cec48fe67f5dddf8a02fd8a4e0a66a06595b052860df1818027eda8->enter($__internal_fa0eae771cec48fe67f5dddf8a02fd8a4e0a66a06595b052860df1818027eda8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_44fd35491527f198c7caa11d505bf63836678054e28f626ab99ac17436ab3194 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_44fd35491527f198c7caa11d505bf63836678054e28f626ab99ac17436ab3194->enter($__internal_44fd35491527f198c7caa11d505bf63836678054e28f626ab99ac17436ab3194_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
         
-        $__internal_fa0eae771cec48fe67f5dddf8a02fd8a4e0a66a06595b052860df1818027eda8->leave($__internal_fa0eae771cec48fe67f5dddf8a02fd8a4e0a66a06595b052860df1818027eda8_prof);
+        $__internal_44fd35491527f198c7caa11d505bf63836678054e28f626ab99ac17436ab3194->leave($__internal_44fd35491527f198c7caa11d505bf63836678054e28f626ab99ac17436ab3194_prof);
 
     }
 
@@ -264,7 +284,7 @@ class __TwigTemplate_114b7be79fb6677af02f9aa7ae2c7e79d5b7cccd01f3bbb5e76ca6ebfea
 
     public function getDebugInfo()
     {
-        return array (  235 => 95,  224 => 7,  212 => 6,  194 => 96,  190 => 95,  182 => 89,  176 => 85,  169 => 81,  163 => 78,  157 => 75,  153 => 74,  148 => 73,  145 => 72,  139 => 70,  137 => 69,  130 => 65,  110 => 48,  103 => 44,  76 => 20,  72 => 19,  68 => 18,  64 => 17,  60 => 16,  55 => 14,  51 => 13,  47 => 12,  39 => 8,  37 => 7,  33 => 6,  26 => 1,);
+        return array (  255 => 97,  244 => 7,  232 => 6,  196 => 98,  192 => 97,  184 => 91,  178 => 87,  171 => 83,  165 => 80,  159 => 77,  155 => 76,  150 => 75,  147 => 74,  141 => 72,  139 => 71,  133 => 68,  110 => 48,  103 => 44,  76 => 20,  72 => 19,  68 => 18,  64 => 17,  60 => 16,  55 => 14,  51 => 13,  47 => 12,  39 => 8,  37 => 7,  33 => 6,  26 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -341,9 +361,11 @@ class __TwigTemplate_114b7be79fb6677af02f9aa7ae2c7e79d5b7cccd01f3bbb5e76ca6ebfea
 \t\t\t\t\t<span class=\"icon-bar\"></span>
 \t\t\t\t\t<span class=\"icon-bar\"></span>
 \t\t\t\t</button>
-\t\t\t\t<a class=\"navbar-brand\" href=\"{{ path('homepage') }}\">Bouée Corsaire</a>
 \t\t\t</div>
 \t\t\t<div class=\"collapse navbar-collapse\" id=\"myNavbar\">
+\t\t\t\t<div class=\"navbar-header\">
+      \t\t\t\t<a class=\"navbar-brand\" href=\"{{ path('homepage') }}\">Bouée Corsaire</a>
+    \t\t\t</div>
 \t\t\t\t<ul class=\"nav navbar-nav\">
 \t\t\t\t\t{% if app.user and is_granted('ROLE_ADMIN') %}
     \t\t\t\t\t<li><a href=\"{{ path('admin') }}\">Administration</a></li>
@@ -373,16 +395,34 @@ class __TwigTemplate_114b7be79fb6677af02f9aa7ae2c7e79d5b7cccd01f3bbb5e76ca6ebfea
 \t
 \t{% block body %}{% endblock %} {% block javascripts %}{% endblock %}
 \t
-\t<footer>
-\t\t<i class=\"fa fa-facebook-square fa-3x\" aria-hidden=\"true\" ></i>
-\t\t<i class=\"fa fa-twitter-square fa-3x\" aria-hidden=\"true\"></i>
-\t\t<i class=\"fa fa-google-plus-square fa-3x\" aria-hidden=\"true\"></i>
+\t<footer class=\"col-lg-12\">
+\t\t<div class=\"plan col-lg-3 col-lg-offset-1\">
+\t\t\t<h3>Plan du site</h3>
+\t\t\t<a>Acceuil</a>
+\t\t\t<a>Service</a>
+\t\t\t<a>Besoin</a>
+\t\t\t<a>Mon profil</a>
+\t\t</div>
+\t\t
+\t\t<div class=\"Social col-lg-3 col-lg-offset-1\">
+\t\t\t<h3>Nous suivre</h3>
+\t\t\t<a>facebook</a>\t\t\t
+\t\t\t<a>Twitter</a>
+\t\t\t<a>Google+</a>
+\t\t</div>
+\t\t
+\t\t<div class=\"Contact col-lg-3 col-lg-offset-1\">
+\t\t\t<h3>Contact</h3>
+\t\t\t<a>Adresse@boueecorsaire.com</a>
+\t\t\t<a>3 rue de l'adresse</a>
+\t\t\t<a>35000 rennes</a>
+\t\t\t<a>Telephone : 0299203010</a>
+\t\t</div>
+\t\t<div class=\"Mention col-lg-offset-4 col-lg-8\">
+\t\t\t<p>Copyright © 2017 <a>Mentions légales</a> / La bouée corsaire </p>
+\t\t</div>
 \t</footer>
-
-
-
-</body>
-
+\t</body>
 </html>", "AppBundle::layout.html.twig", "/home/pcapprenant17/Documents/Bou-e_corsaire_projet/src/AppBundle/Resources/views/layout.html.twig");
     }
 }

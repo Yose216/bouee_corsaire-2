@@ -21,20 +21,20 @@ class __TwigTemplate_3c5d8598c15ab515428a627226c68584e0bb1fb53629aabcefcbfae74fe
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_40b4aff78fe41e11a104e64d1cb6f987c4bd9f0bae6aa587eab79af101d93700 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_40b4aff78fe41e11a104e64d1cb6f987c4bd9f0bae6aa587eab79af101d93700->enter($__internal_40b4aff78fe41e11a104e64d1cb6f987c4bd9f0bae6aa587eab79af101d93700_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":service:index.html.twig"));
+        $__internal_882add4d27b236dc4bb53df03dfe1d5d2e6fad2cbb9db193d0ffe56a7929020b = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_882add4d27b236dc4bb53df03dfe1d5d2e6fad2cbb9db193d0ffe56a7929020b->enter($__internal_882add4d27b236dc4bb53df03dfe1d5d2e6fad2cbb9db193d0ffe56a7929020b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":service:index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_40b4aff78fe41e11a104e64d1cb6f987c4bd9f0bae6aa587eab79af101d93700->leave($__internal_40b4aff78fe41e11a104e64d1cb6f987c4bd9f0bae6aa587eab79af101d93700_prof);
+        $__internal_882add4d27b236dc4bb53df03dfe1d5d2e6fad2cbb9db193d0ffe56a7929020b->leave($__internal_882add4d27b236dc4bb53df03dfe1d5d2e6fad2cbb9db193d0ffe56a7929020b_prof);
 
     }
 
     // line 2
     public function block_body($context, array $blocks = array())
     {
-        $__internal_a0c0847ff4ea47bae36d7e2ad99d6d3e535e3f7a84fb4da0d0f553d1bcc55acc = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_a0c0847ff4ea47bae36d7e2ad99d6d3e535e3f7a84fb4da0d0f553d1bcc55acc->enter($__internal_a0c0847ff4ea47bae36d7e2ad99d6d3e535e3f7a84fb4da0d0f553d1bcc55acc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_7713be90a9af58774bb1b96bce4a31526c19f841272c43d49003be368012f313 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_7713be90a9af58774bb1b96bce4a31526c19f841272c43d49003be368012f313->enter($__internal_7713be90a9af58774bb1b96bce4a31526c19f841272c43d49003be368012f313_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 3
         echo "<body>
@@ -81,19 +81,19 @@ class __TwigTemplate_3c5d8598c15ab515428a627226c68584e0bb1fb53629aabcefcbfae74fe
 \t\t\t\t<div class=\"heure\"><p class=\"nbheure\">";
             // line 36
             echo twig_escape_filter($this->env, $this->getAttribute($context["service"], "heure", array()), "html", null, true);
-            echo "</p></div>
+            echo "H</p></div>
 \t\t\t\t\t<p class=\"info\">";
             // line 37
             echo twig_escape_filter($this->env, $this->getAttribute($context["service"], "title", array()), "html", null, true);
             echo "<br>Catégorie</p>
 \t\t\t\t</div>
 \t\t\t\t<div class=\"categorie\">
-\t\t\t\t<div class=\"icone\"><img src=\"\"></div>
+\t\t\t\t<div class=\"heure\"><img src=\"\"></div>
 \t\t\t\t\t<p class=\"identite\">";
             // line 41
             echo twig_escape_filter($this->env, $this->getAttribute($context["service"], "user", array()), "html", null, true);
             echo "<br>";
-            echo twig_escape_filter($this->env, $this->getAttribute($context["service"], "codePostal", array()), "html", null, true);
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["service"], "user", array()), "codepostal", array()), "html", null, true);
             echo "<br>";
             echo twig_escape_filter($this->env, $this->getAttribute($context["service"], "description", array()), "html", null, true);
             echo "</p>
@@ -108,7 +108,7 @@ class __TwigTemplate_3c5d8598c15ab515428a627226c68584e0bb1fb53629aabcefcbfae74fe
         echo "    </div>
             
 \t<br>
-<div class=\"col-md-12 text-center\">
+<div class=\"col-md-8 col-lg-offset-4\">
                <!--Pagination-->
                <nav aria-label=\"Page navigation\">
                    <ul class=\"pagination\">
@@ -130,13 +130,12 @@ class __TwigTemplate_3c5d8598c15ab515428a627226c68584e0bb1fb53629aabcefcbfae74fe
                    </ul>
                </nav>
            </div>
-\t
-
+\t</div>
 </body>
 
 ";
         
-        $__internal_a0c0847ff4ea47bae36d7e2ad99d6d3e535e3f7a84fb4da0d0f553d1bcc55acc->leave($__internal_a0c0847ff4ea47bae36d7e2ad99d6d3e535e3f7a84fb4da0d0f553d1bcc55acc_prof);
+        $__internal_7713be90a9af58774bb1b96bce4a31526c19f841272c43d49003be368012f313->leave($__internal_7713be90a9af58774bb1b96bce4a31526c19f841272c43d49003be368012f313_prof);
 
     }
 
@@ -200,19 +199,19 @@ class __TwigTemplate_3c5d8598c15ab515428a627226c68584e0bb1fb53629aabcefcbfae74fe
 \t\t\t<div class=\"col-sm-4 cadre\">
 \t\t\t\t<img src=\"{{ app.request.basepath }}/images/travaux.jpeg\" class=\"img-responsive cadreimg\" alt=\"Image\">
 \t\t\t\t<div class=\"service\">
-\t\t\t\t<div class=\"heure\"><p class=\"nbheure\">{{ service.heure }}</p></div>
+\t\t\t\t<div class=\"heure\"><p class=\"nbheure\">{{ service.heure }}H</p></div>
 \t\t\t\t\t<p class=\"info\">{{ service.title }}<br>Catégorie</p>
 \t\t\t\t</div>
 \t\t\t\t<div class=\"categorie\">
-\t\t\t\t<div class=\"icone\"><img src=\"\"></div>
-\t\t\t\t\t<p class=\"identite\">{{ service.user}}<br>{{ service.codePostal }}<br>{{ service.description }}</p>
+\t\t\t\t<div class=\"heure\"><img src=\"\"></div>
+\t\t\t\t\t<p class=\"identite\">{{ service.user}}<br>{{ service.user.codepostal }}<br>{{ service.description }}</p>
 \t\t\t\t</div>
 \t\t\t</div>
 \t\t\t{% endfor %}
     </div>
             
 \t<br>
-<div class=\"col-md-12 text-center\">
+<div class=\"col-md-8 col-lg-offset-4\">
                <!--Pagination-->
                <nav aria-label=\"Page navigation\">
                    <ul class=\"pagination\">
@@ -234,8 +233,7 @@ class __TwigTemplate_3c5d8598c15ab515428a627226c68584e0bb1fb53629aabcefcbfae74fe
                    </ul>
                </nav>
            </div>
-\t
-
+\t</div>
 </body>
 
 {% endblock %}
