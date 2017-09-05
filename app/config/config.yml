@@ -88,11 +88,11 @@ doctrine:
 
         port:     "%database_port%"
 
-        dbname:   "symfony"
+        dbname:   "%database_name%"
 
-        user:     "root"
+        user:     "%database_user%"
 
-        password: "password"
+        password: "%database_password%"
 
         charset:  UTF8
 
@@ -145,7 +145,10 @@ fos_user:
     firewall_name: main
 
     user_class: AppBundle\Entity\User
- 
+    from_email:
+        address: "%mailer_user%"
+        sender_name: "%mailer_user%"
+
     registration:
         form:
             type: AppBundle\Form\RegistrationType
